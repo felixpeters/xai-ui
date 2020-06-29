@@ -1,20 +1,43 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './App.css';
 
 function App() {
 
   return (
-    <div className="max-w-md mx-auto flex p-6 bg-gray-100 mt-10 rounded-lg shadow-xl">
-      <div className="ml-6 pt-1">
-        <h1 className="text-2xl text-blue-700 leading-tight">
-          Tailwind and Create React App
-        </h1>
-        <p className="text-base text-gray-700 leading-normal">
-          Building apps together
-        </p>
-      </div>
-    </div>
+      <Router>
+        <header class="bg-gray-900 flex justify-between items-center px-4 py-3">
+          <div class="text-white text-3xl font-semibold">
+            Explainable AI Interfaces
+          </div>
+          <nav className="flex">
+            <Link to="/" className="text-lg text-white font-semibold rounded px-2 py-1 hover:bg-gray-800">Home</Link>
+            <Link to="/survival" className="text-lg text-white font-semibold rounded px-2 py-1 hover:bg-gray-800">Survival Analysis</Link>
+          </nav>
+        </header>
+        <Switch>
+          <Route path="/survival">
+            <Survival />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
   );
+}
+
+function Home() {
+  return <h2>Home</h2>
+}
+
+function Survival() {
+  return <h2>Survival</h2>
 }
 
 export default App;
