@@ -5,9 +5,11 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Home from './Home';
+import Survival from './Survival';
 import './App.css';
 
-function App() {
+const App = () => {
 
   return (
       <Router>
@@ -30,14 +32,6 @@ function App() {
         </Switch>
       </Router>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>
-}
-
-function Survival() {
-  return <h2>Survival</h2>
 }
 
 export default App;
