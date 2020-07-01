@@ -1,6 +1,6 @@
 import React from 'react';
 import SurvivalSummary from './SurvivalSummary';
-import SurvivalData from './SurvivalData';
+import SurvivalCases from './SurvivalCases';
 
 const Survival = () => {
   return (
@@ -9,7 +9,7 @@ const Survival = () => {
         <h1 class="font-semibold text-2xl px-4 py-4">Example: Survival Analysis</h1>
       </div>
       <SurvivalSummary/>
-      <SurvivalData/>
+      <SurvivalCases />
     </div>
   );
 };
