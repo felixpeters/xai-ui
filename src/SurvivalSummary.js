@@ -5,10 +5,9 @@ import SurvivalStatistics from './SurvivalStatistics';
 
 const SurvivalSummary = () => {
   return (
-    <div class="flex flex-row m-4 items-stretch justify-center text-gray-700">
+    <div class="flex flex-col md:flex-row m-4 items-stretch justify-center text-gray-700">
       <SurvivalModel />
       <SurvivalData />
-      <SurvivalStatistics />
     </div>
   );
 };
