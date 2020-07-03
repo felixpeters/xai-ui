@@ -15,7 +15,7 @@ const App = () => {
       <Router>
         <header class="bg-gray-900 flex justify-between items-center px-4 py-3">
           <div class="text-white text-3xl font-medium">
-            Explainable AI Repository
+            <img src="./fpc_logo.png" class="h-20" alt=""/>
           </div>
           <nav className="flex">
             <Link to="/" className="text-lg text-white rounded px-2 py-1 hover:bg-gray-800">Home</Link>
