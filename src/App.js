@@ -30,7 +30,7 @@ const App = () => {
             <Home />
           </Route>
         </Switch>
-        <footer class="bg-gray-900 flex justify-between items-center px-4 py-3">
+        <footer class="bg-gray-900 flex flex-col md:flex-row md:justify-between items-center px-4 py-3">
           <div class="text-white text-sm font-thin">Social icons</div>
           <div class="text-white text-sm font-thin">&copy; 2020 by Felix Peters. All rights reserved.</div>
         </footer>
