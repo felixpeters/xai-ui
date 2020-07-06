@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { useTable } from 'react-table';
 import moment from 'moment';
 
@@ -79,7 +80,10 @@ const SurvivalCases = () => {
       {
         id: 'Link',
         accessor: (originalRow, rowIndex) => { 
-          return '/survival/' + String(originalRow.patient_id); 
+          const link = '/survival/details/' + String(originalRow.patient_id); 
+          return (
+            <Link to={link} className="text-right text-indigo-600 hover:text-indigo-900">Details</Link>
+          );
         },
       }
     ],
