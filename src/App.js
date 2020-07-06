@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from './Home';
 import Survival from './Survival';
+import SurvivalDetails from './SurvivalDetails';
 import './App.css';
 
 const App = () => {
@@ -37,6 +38,9 @@ const App = () => {
           </nav>
         </header>
         <Switch>
+          <Route path="/survival/details/:id">
+            <SurvivalDetails />
+          </Route>
           <Route path="/survival">
             <Survival />
           </Route>
